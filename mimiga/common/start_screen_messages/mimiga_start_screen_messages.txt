@@ -1,0 +1,7 @@
+part = {
+    location = 0
+    localization = "START_SCREEN_MIMIGA"
+    trigger = {
+           has_country_flag = mimiga_1
+    }		
+}

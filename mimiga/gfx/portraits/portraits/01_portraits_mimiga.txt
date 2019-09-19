@@ -1,0 +1,164 @@
+portraits = {
+	#Modded Toroko pictures, for pops and leaders
+	2dmimiga_male_01 = {texturefile = "gfx/models/portraits/mimiga/Mimiga_01.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	2dmimiga_male_02 = {texturefile = "gfx/models/portraits/mimiga/Mimiga_02.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}  
+	2dmimiga_male_03 = {texturefile = "gfx/models/portraits/mimiga/Mimiga_05.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	2dmimiga_female_01 = {texturefile = "gfx/models/portraits/mimiga/Mimiga_03.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}			
+	2dmimiga_female_02 = {texturefile = "gfx/models/portraits/mimiga/Mimiga_04.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	2dmimiga_female_03 = {texturefile = "gfx/models/portraits/mimiga/Mimiga_06.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	#Modded Itoh Pictures, for leaders
+	2dmimiga_male2_01 = {texturefile = "gfx/models/portraits/mimiga/Mimiga2_01.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	2dmimiga_male2_02 = {texturefile = "gfx/models/portraits/mimiga/Mimiga2_02.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	2dmimiga_male2_03 = {texturefile = "gfx/models/portraits/mimiga/Mimiga2_03.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	2dmimiga_male2_04 = {texturefile = "gfx/models/portraits/mimiga/Mimiga2_04.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	#Modded Jack pictures, for leaders
+	2dmimiga_Jack_01 = {texturefile = "gfx/models/portraits/mimiga/Mimiga3_01.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	2dmimiga_Jack_02 = {texturefile = "gfx/models/portraits/mimiga/Mimiga3_02.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	2dmimiga_Jack_03 = {texturefile = "gfx/models/portraits/mimiga/Mimiga3_03.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	2dmimiga_Jack_04 = {texturefile = "gfx/models/portraits/mimiga/Mimiga3_04.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	2dmimiga_Jack_05 = {texturefile = "gfx/models/portraits/mimiga/Mimiga3_05.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	#Modded Sue Pictures, for, yes, leaders
+	2dmimiga_Sue_01 = {texturefile = "gfx/models/portraits/mimiga/Mimiga4_01.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	2dmimiga_Sue_02 = {texturefile = "gfx/models/portraits/mimiga/Mimiga4_02.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	2dmimiga_Sue_03 = {texturefile = "gfx/models/portraits/mimiga/Mimiga4_03.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	2dmimiga_Sue_04 = {texturefile = "gfx/models/portraits/mimiga/Mimiga4_04.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	2dmimiga_Sue_05 = {texturefile = "gfx/models/portraits/mimiga/Mimiga4_05.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+	2dmimiga_Sue_06 = {texturefile = "gfx/models/portraits/mimiga/Mimiga4_06.dds" clothes_selector = "no_texture" hair_selector = "no_texture"}
+}
+
+portrait_groups = {
+	2dmimiga_01 = { 
+		default = 2dmimiga_male_01
+		game_setup = {
+			add = {
+				trigger = {ruler = { gender = male }}
+				portraits = {
+					2dmimiga_male_01
+					2dmimiga_male_02
+					2dmimiga_male_03
+					2dmimiga_male2_01
+					2dmimiga_male2_02
+					2dmimiga_male2_03
+					2dmimiga_male2_04
+					2dmimiga_Jack_01
+					2dmimiga_Jack_02
+					2dmimiga_Jack_03
+					2dmimiga_Jack_04
+					2dmimiga_Jack_05
+					}
+			}
+			add = {
+				trigger = {ruler = { gender = female }}
+				portraits = {
+					2dmimiga_female_01
+					2dmimiga_female_02
+					2dmimiga_female_03
+					2dmimiga_Jack_01
+					2dmimiga_Jack_02
+					2dmimiga_Jack_03
+					2dmimiga_Jack_04
+					2dmimiga_Jack_05
+					2dmimiga_Sue_01
+					2dmimiga_Sue_02
+					2dmimiga_Sue_03
+					2dmimiga_Sue_04
+					2dmimiga_Sue_05
+					2dmimiga_Sue_06
+				}
+			}
+		}
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					2dmimiga_male_01
+				}
+			}
+		}
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					2dmimiga_male_01
+					2dmimiga_male_02
+					2dmimiga_male_03
+					2dmimiga_female_01
+					2dmimiga_female_02
+					2dmimiga_female_03
+				}
+			}
+		}
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {trigger = {gender = female}
+				portraits = {
+					2dmimiga_female_01
+					2dmimiga_female_02
+					2dmimiga_female_03
+					2dmimiga_Jack_01
+					2dmimiga_Jack_02
+					2dmimiga_Jack_03
+					2dmimiga_Jack_04
+					2dmimiga_Jack_05
+					2dmimiga_Sue_01
+					2dmimiga_Sue_02
+					2dmimiga_Sue_03
+					2dmimiga_Sue_04
+					2dmimiga_Sue_05
+					2dmimiga_Sue_06
+				}
+			}
+			add = {trigger = {gender = male}
+				portraits = {
+					2dmimiga_male_01
+					2dmimiga_male_02
+					2dmimiga_male_03
+					2dmimiga_male2_01
+					2dmimiga_male2_02
+					2dmimiga_male2_03
+					2dmimiga_male2_04
+					2dmimiga_Jack_01
+					2dmimiga_Jack_02
+					2dmimiga_Jack_03
+					2dmimiga_Jack_04
+					2dmimiga_Jack_05
+				}
+			}
+		}
+		#ruler scope
+		ruler = {
+			add = {trigger = {gender = female}
+				portraits = {
+					2dmimiga_female_01
+					2dmimiga_female_02
+					2dmimiga_female_03
+					2dmimiga_Jack_01
+					2dmimiga_Jack_02
+					2dmimiga_Jack_03
+					2dmimiga_Jack_04
+					2dmimiga_Jack_05
+					2dmimiga_Sue_01
+					2dmimiga_Sue_02
+					2dmimiga_Sue_03
+					2dmimiga_Sue_04
+					2dmimiga_Sue_05
+					2dmimiga_Sue_06
+				}
+			}
+			add = {trigger = {gender = male}
+				portraits = {
+					2dmimiga_male_01
+					2dmimiga_male_02
+					2dmimiga_male_03
+					2dmimiga_male2_01
+					2dmimiga_male2_02
+					2dmimiga_male2_03
+					2dmimiga_male2_04
+					2dmimiga_Jack_01
+					2dmimiga_Jack_02
+					2dmimiga_Jack_03
+					2dmimiga_Jack_04
+					2dmimiga_Jack_05
+				}
+			}
+		}
+	}
+}

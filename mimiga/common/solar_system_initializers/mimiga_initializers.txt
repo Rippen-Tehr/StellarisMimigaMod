@@ -1,0 +1,113 @@
+@base_moon_distance = 10
+
+mimiga_system_initializer = {
+  name = "Neo Sol"
+  class = sc_trinary_1
+  usage = custom_empire
+    flags = { empire_home_system }
+  init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+	}
+		generate_home_system_resources = yes
+  }
+    
+  planet = {
+		name = "Jenka"
+		count = 1
+		class = pc_f_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 17
+		has_ring = no
+  }
+    
+  planet = {
+		name = "Ballos"
+		count = 1
+		class = pc_m_star
+		orbit_distance = 25
+		orbit_angle = 1
+		size = 15
+		has_ring = no
+   }
+    
+  planet = {
+		class = random_non_colonizable
+		orbit_distance = 25
+   	orbit_angle = 35
+    size = 11
+		has_ring = no
+		
+    moon = {
+			count = { min = 0 max = 1 }
+			orbit_distance = { min = 5 max = 10 }
+			size = { min = 3 max = 5 }
+		}
+  }
+
+  planet = {
+		name = "Castaway"
+		class = "pc_continental"
+		orbit_distance = 30
+		orbit_angle = 120
+		size = 16
+		starting_planet = yes
+		has_ring = no
+		deposit_blockers = none
+		modifiers = none
+		flags = { mimiga_homeworld }
+		init_effect = {
+			
+			prevent_anomaly = yes
+			#set_deposit =  = d_floating_mimiga_island
+    }
+        
+    moon = {
+			count = { min = 1 max = 2 }
+			orbit_distance = { min = 5 max = 10 }
+			size = { min = 3 max = 5 }
+		}
+  }
+    
+  planet = {
+    class = random_non_colonizable
+    count = {min = 1 max = 3}
+    orbit_distance = {min = 30 max = 40}
+    orbit_angle = {min = 1 max = 270}
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_distance = { min = 5 max = 10 }
+			size = { min = 3 max = 5 }
+		}
+	}
+		
+	planet = {
+		class = random_asteroid
+		count = {min = 1 max = 5}
+		orbit_distance = 10
+		orbit_angle = {min = 1 max = 270}
+	}
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 210
+	}
+
+  planet = {
+    name = "Misery"
+    class = pc_t_star
+    count = 1
+    orbit_distance = {min = 75 max = 100}
+    size = 16
+    moon = {
+			count = { min = 2 max = 6 }
+			orbit_distance = { min = 8 max = 10 }
+			size = { min = 3 max = 16 }
+		}
+  }
+}

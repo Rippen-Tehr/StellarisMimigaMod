@@ -1,0 +1,9 @@
+MIMIGA = {
+	mimiga_name_1 = {
+		name = "Mimiga"
+		plural = "Mimiga"
+		home_planet = "Castaway"
+		home_system = "Neo Sol"
+		name_list = "MIMIGA1"
+	}
+}

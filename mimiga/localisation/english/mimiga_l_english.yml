@@ -1,0 +1,34 @@
+﻿ l_english:
+ ####################################
+ # Species Classes
+ #################################### 
+Mimiga:0 "Mimiga"
+ Mimiga_desc:1 "Species Class has no effect on your Empire, but other species classes may consider Mimiga to be less than theirs."
+ Mimiga_plural:0 "Mimiga"
+ Mimiga_insult_01:0 "bunnydog"
+ Mimiga_insult_plural_01:0 "bunnydogs"
+ Mimiga_compliment_01:0 "bun"
+ Mimiga_compliment_plural_01:0 "buns"
+ Mimiga_spawn:0 "kit"
+ Mimiga_spawn_plural:0 "kits"
+ Mimiga_sound_01:0 "growling"
+ Mimiga_sound_02:0 "grunting"
+ Mimiga_sound_03:0 "yapping"
+ Mimiga_sound_04:0 "yowling"
+ Mimiga_sound_05:0 "mewling"
+ Mimiga_organ:0 "stomach"
+ Mimiga_mouth:0 "mouth"
+ Mimiga_hand:0 "paw"
+ ####################################
+ # Start Screen
+ #################################### 
+ START_SCREEN_MIMIGA:0 "It had been many, many, many years since our home had been taken from Earth through space and perhaps, even time, to another world many light years away. \n\nDespite the fact that we came with advanced technologies and knowledge, it took centuries, to build our population and infrastructure from our small beginnings, through many trials and trevails, \n\nbut at long last, the Mimiga are finally ready and able to take their place among the stars, and perhaps, one day, find their estranged, ancestral home."
+####################################
+ # Deposits
+ #################################### 
+ d_floating_mimiga_island:0 "The Floating Island"
+ d_floating_mimiga_island_desc:0 "The original home of the Mimiga, ripped away from Earth and transplanted onto Castaway long ago. Having long served as their safe haven on an alien world, now this over developed, floating island serves as the location of the Mimiga seat of government and reminder of where the Mimiga came from."
+####################################
+ # Opinion Modifiers
+ #################################### 
+ opinion_same_homeworld:0 "Evolved on same homeworld"

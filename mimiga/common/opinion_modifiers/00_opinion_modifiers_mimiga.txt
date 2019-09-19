@@ -1,0 +1,13 @@
+opinion_same_homeworld = {
+	trigger = {			
+		FROM = {
+            OR = {
+                has_country_flag = human_1
+                has_country_flag = human_2
+            }
+		}
+	}
+	opinion = {
+		base = 20
+	}
+}

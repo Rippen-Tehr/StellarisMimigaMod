@@ -1,0 +1,72 @@
+mimiga1 = {
+  flags = { mimiga_1 custom_start_screen }
+  ship_prefix = "CMS"
+
+	species={
+		class="Mimiga"
+		portrait="2dmimiga_01"
+		name="Mimiga"
+		plural="Mimiga"
+		adjective="Mimiga"
+		name_list="MIMIGA1"
+		trait="trait_weak"
+		trait="trait_communal"
+		trait="trait_adaptive"
+		trait="trait_sedentary"
+		trait="trait_conservational"
+  }
+
+  name = "Confederated Mimiga Territories"
+  adjective="Mimiga"
+	authority="auth_democratic"
+	government="gov_direct_democracy"
+	planet_name="Castaway"
+	planet_class="pc_continental"
+	system_name="Neo Sol"
+	initializer="mimiga_system_initializer"
+	graphical_culture="reptilian_01"
+	city_graphical_culture="humanoid_01"
+	species_bio = "A freak accident sent this species from their home to another world across the galaxy. Many, many years later, the Mimiga set out to find their estranged home."
+    
+	empire_flag={
+		icon={
+			category="blocky"
+			file="flag_blocky_16.dds"
+		}
+		background={
+			category="backgrounds"
+			file="new_dawn.dds"
+		}
+		colors={
+			"dark_blue"
+			"black"
+			"null"
+			"null"
+		}
+  }
+    
+  ruler={
+		gender=male
+		name="Arthur Edwards"
+		portrait="2dmimiga_male_01"
+		texture=0
+		hair=0
+		clothes=0
+		ruler_title = "Chancellor"
+		heir_title = ""
+		heir_title_female = ""
+  }
+    
+  spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_ruthless_capitalists_room"
+	spawn_enabled=yes
+	ethic="ethic_egalitarian"
+	ethic="ethic_xenophile"
+  ethic="ethic_materialist"
+    
+	civics={
+		"civic_mechanists"
+		"civic_environmentalist"
+	}
+}
