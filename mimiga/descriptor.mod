@@ -4,4 +4,4 @@ tags={
 	"Species"
 }
 picture="2dmimiga_01.png"
-supported_version="2.3.*"
+supported_version="2.5.*"
