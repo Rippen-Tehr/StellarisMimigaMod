@@ -57,14 +57,16 @@ mimiga1 = {
 		heir_title_female = ""
   }
     
-  spawn_as_fallen=no
+  	spawn_as_fallen=no
 	ignore_portrait_duplication=no
 	room="personality_ruthless_capitalists_room"
 	spawn_enabled=yes
 	ethic="ethic_egalitarian"
 	ethic="ethic_xenophile"
-  ethic="ethic_materialist"
-    
+	ethic="ethic_materialist"
+	#Using the default origin since lost colony would have these guys be the lost colony of some random Mimiga empire and NOT of Earth
+	#When I get around to updating this properly, I'll try to create a better custom origin based off of lost colony or a meshing of that and others
+    origin = "origin_default"
 	civics={
 		"civic_mechanists"
 		"civic_environmentalist"

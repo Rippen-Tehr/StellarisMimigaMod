@@ -5,4 +5,4 @@ tags={
 }
 picture="2dmimiga_01.png"
 remote_file_id="1522085143"
-supported_version="2.5.*"
+supported_version="2.6.*"
