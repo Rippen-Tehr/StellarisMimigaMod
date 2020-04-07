@@ -64,11 +64,9 @@ mimiga1 = {
 	ethic="ethic_egalitarian"
 	ethic="ethic_xenophile"
 	ethic="ethic_materialist"
-	#Using the default origin since lost colony would have these guys be the lost colony of some random Mimiga empire and NOT of Earth
-	#When I get around to updating this properly, I'll try to create a better custom origin based off of lost colony or a meshing of that and others
-    origin = "origin_default"
+    origin = "origin_mechanists"
 	civics={
-		"civic_mechanists"
+		"civic_efficient_bureaucracy"
 		"civic_environmentalist"
 	}
 }
